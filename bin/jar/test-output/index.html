@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG new reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">3 suites, 7 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Eureka1">
+              <span class="suite-name border-passed">Eureka1</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Eureka1">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Eureka1">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Eureka1">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Eureka1">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Eureka1">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Eureka1">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Eureka1">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Eureka1" class="hide-methods passed suite-Eureka1"> (hide)</a> <!-- hide-methods passed suite-Eureka1 -->
+                      <a href="#" panel-name="suite-Eureka1" class="show-methods passed suite-Eureka1"> (show)</a> <!-- show-methods passed suite-Eureka1 -->
+                    </span>
+                    <div class="method-list-content passed suite-Eureka1">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Eureka1" title="com.bluemeric.test.GenerateTest" hash-for-method="getTest(104.199.158.27:7979, , eureka1.txt, eureka1)">getTest(104.199.158.27:7979, , eureka1.txt, eureka1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Eureka1 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Eureka2">
+              <span class="suite-name border-failed">Eureka2</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Eureka2">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Eureka2">
+                    <span class="test-stats">5 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Eureka2">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Eureka2">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Eureka2">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Eureka2">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Eureka2">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 5 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Eureka2" class="hide-methods failed suite-Eureka2"> (hide)</a> <!-- hide-methods failed suite-Eureka2 -->
+                      <a href="#" panel-name="suite-Eureka2" class="show-methods failed suite-Eureka2"> (show)</a> <!-- show-methods failed suite-Eureka2 -->
+                    </span>
+                    <div class="method-list-content failed suite-Eureka2">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Eureka2" title="com.bluemeric.test.GenerateTest" hash-for-method="getTest(104.199.158.27:7979, ping, ping.txt, eureka2)">getTest(104.199.158.27:7979, ping, ping.txt, eureka2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Eureka2" title="com.bluemeric.test.GenerateTest" hash-for-method="getTest(104.199.158.27:7979, health, health.txt, eureka2)">getTest(104.199.158.27:7979, health, health.txt, eureka2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Eureka2" title="com.bluemeric.test.GenerateTest" hash-for-method="getTest(104.199.158.27:7979, hosts/gateway, gateway.txt, eureka2)">getTest(104.199.158.27:7979, hosts/gateway, gateway.txt, eureka2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Eureka2" title="com.bluemeric.test.GenerateTest" hash-for-method="getTest(104.199.158.27:7979, movie/env, movieenv.txt, eureka2)">getTest(104.199.158.27:7979, movie/env, movieenv.txt, eureka2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Eureka2" title="com.bluemeric.test.GenerateTest" hash-for-method="getTest(104.199.158.27:7979, movie/autoconfig, autoconfig.txt, eureka2)">getTest(104.199.158.27:7979, movie/autoconfig, autoconfig.txt, eureka2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Eureka2 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Eureka">
+              <span class="suite-name border-failed">Eureka</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Eureka">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Eureka">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Eureka">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Eureka">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Eureka">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Eureka">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Eureka">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Eureka" class="hide-methods failed suite-Eureka"> (hide)</a> <!-- hide-methods failed suite-Eureka -->
+                      <a href="#" panel-name="suite-Eureka" class="show-methods failed suite-Eureka"> (show)</a> <!-- show-methods failed suite-Eureka -->
+                    </span>
+                    <div class="method-list-content failed suite-Eureka">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Eureka" title="com.bluemeric.test.GenerateTest" hash-for-method="getTest(104.199.158.27:7979, , eureka.txt, eureka)">getTest(104.199.158.27:7979, , eureka.txt, eureka)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Eureka" title="com.bluemeric.test.GenerateTest" hash-for-method="getTest(104.199.158.27:7979, lastn, lastn.txt, eureka)">getTest(104.199.158.27:7979, lastn, lastn.txt, eureka)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Eureka -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Eureka1" class="panel Eureka1">
+          <div class="suite-Eureka1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.bluemeric.test.GenerateTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTest(104.199.158.27:7979, , eureka1.txt, eureka1)">
+                  </a> <!-- getTest(104.199.158.27:7979, , eureka1.txt, eureka1) -->
+                  <span class="method-name">getTest</span>
+                  <span class="parameters">(104.199.158.27:7979, , eureka1.txt, eureka1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Eureka1-class-passed -->
+        </div> <!-- panel Eureka1 -->
+        <div panel-name="suite-Eureka2" class="panel Eureka2">
+          <div class="suite-Eureka2-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.bluemeric.test.GenerateTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTest(104.199.158.27:7979, ping, ping.txt, eureka2)">
+                  </a> <!-- getTest(104.199.158.27:7979, ping, ping.txt, eureka2) -->
+                  <span class="method-name">getTest</span>
+                  <span class="parameters">(104.199.158.27:7979, ping, ping.txt, eureka2)</span>
+                  <div class="stack-trace"><b>"Expected response code is 200. But got 404. Hence failed the test."</b><br>org.testng.Assert.fail(Assert.java:89)<br>com.bluemeric.test.GenerateTest.getTest(Unknown Source)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:702)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:768)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1113)<br>org.testng.TestNG.run(TestNG.java:1025)<br>com.bluemeric.test.RunTest.runTests(Unknown Source)<br>com.bluemeric.test.RunTest.main(Unknown Source)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTest(104.199.158.27:7979, health, health.txt, eureka2)">
+                  </a> <!-- getTest(104.199.158.27:7979, health, health.txt, eureka2) -->
+                  <span class="method-name">getTest</span>
+                  <span class="parameters">(104.199.158.27:7979, health, health.txt, eureka2)</span>
+                  <div class="stack-trace"><b>"Expected response is localApplication. But received reponse = {"status":"UP","diskSpace":{"status":"UP","total":105654812672,"free":98012565504,"threshold":10485760},"refreshScope":{"status":"UP"},"hystrix":{"status":"UP"}}. Output mismatching. Hence failing the test."</b><br>org.testng.Assert.fail(Assert.java:89)<br>com.bluemeric.test.GenerateTest.getTest(Unknown Source)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:702)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:768)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1113)<br>org.testng.TestNG.run(TestNG.java:1025)<br>com.bluemeric.test.RunTest.runTests(Unknown Source)<br>com.bluemeric.test.RunTest.main(Unknown Source)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTest(104.199.158.27:7979, hosts/gateway, gateway.txt, eureka2)">
+                  </a> <!-- getTest(104.199.158.27:7979, hosts/gateway, gateway.txt, eureka2) -->
+                  <span class="method-name">getTest</span>
+                  <span class="parameters">(104.199.158.27:7979, hosts/gateway, gateway.txt, eureka2)</span>
+                  <div class="stack-trace"><b>"Expected response code is 200. But got 404. Hence failed the test."</b><br>org.testng.Assert.fail(Assert.java:89)<br>com.bluemeric.test.GenerateTest.getTest(Unknown Source)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:702)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:768)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1113)<br>org.testng.TestNG.run(TestNG.java:1025)<br>com.bluemeric.test.RunTest.runTests(Unknown Source)<br>com.bluemeric.test.RunTest.main(Unknown Source)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTest(104.199.158.27:7979, movie/env, movieenv.txt, eureka2)">
+                  </a> <!-- getTest(104.199.158.27:7979, movie/env, movieenv.txt, eureka2) -->
+                  <span class="method-name">getTest</span>
+                  <span class="parameters">(104.199.158.27:7979, movie/env, movieenv.txt, eureka2)</span>
+                  <div class="stack-trace"><b>"Expected response code is 200. But got 404. Hence failed the test."</b><br>org.testng.Assert.fail(Assert.java:89)<br>com.bluemeric.test.GenerateTest.getTest(Unknown Source)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:702)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:768)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1113)<br>org.testng.TestNG.run(TestNG.java:1025)<br>com.bluemeric.test.RunTest.runTests(Unknown Source)<br>com.bluemeric.test.RunTest.main(Unknown Source)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTest(104.199.158.27:7979, movie/autoconfig, autoconfig.txt, eureka2)">
+                  </a> <!-- getTest(104.199.158.27:7979, movie/autoconfig, autoconfig.txt, eureka2) -->
+                  <span class="method-name">getTest</span>
+                  <span class="parameters">(104.199.158.27:7979, movie/autoconfig, autoconfig.txt, eureka2)</span>
+                  <div class="stack-trace"><b>"Expected response code is 200. But got 404. Hence failed the test."</b><br>org.testng.Assert.fail(Assert.java:89)<br>com.bluemeric.test.GenerateTest.getTest(Unknown Source)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:702)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:768)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1113)<br>org.testng.TestNG.run(TestNG.java:1025)<br>com.bluemeric.test.RunTest.runTests(Unknown Source)<br>com.bluemeric.test.RunTest.main(Unknown Source)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Eureka2-class-failed -->
+        </div> <!-- panel Eureka2 -->
+        <div panel-name="suite-Eureka" class="panel Eureka">
+          <div class="suite-Eureka-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.bluemeric.test.GenerateTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTest(104.199.158.27:7979, , eureka.txt, eureka)">
+                  </a> <!-- getTest(104.199.158.27:7979, , eureka.txt, eureka) -->
+                  <span class="method-name">getTest</span>
+                  <span class="parameters">(104.199.158.27:7979, , eureka.txt, eureka)</span>
+                  <div class="stack-trace"><b>"Expected response is Instances currently registered with Eureka. But received reponse = <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<base href="/hystrix">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Hystrix Dashboard</title>
+
+	<!-- Javascript to monitor and display -->
+	<script src="/webjars/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+	
+	<script>
+		function sendToMonitor() {
+			
+			if($('#stream').val().length > 0) {
+				var url = "/hystrix/monitor?stream=" + encodeURIComponent($('#stream').val()) + "";
+				if($('#delay').val().length > 0) {	
+					url += "&delay=" + $('#delay').val();
+				}
+				if($('#title').val().length > 0) {	
+					url += "&title=" + encodeURIComponent($('#title').val());
+				}
+				location.href= url;
+			} else {
+				$('#message').html("The 'stream' value is required.");
+			}
+		}
+	</script>
+</head>
+<body>
+<div style="width:800px;margin:0 auto;">
+	
+	<center>
+	<img width="264" height="233" src="/hystrix/images/hystrix-logo.png">
+	<br>
+	<br>
+	
+	<h2>Hystrix Dashboard</h2>
+	<input id="stream" type="textfield" size="120" placeholder="http://hostname:port/turbine/turbine.stream"></input>
+	<br><br>
+	<i>Cluster via Turbine (default cluster):</i> http://turbine-hostname:port/turbine.stream
+	<br>
+	<i>Cluster via Turbine (custom cluster):</i> http://turbine-hostname:port/turbine.stream?cluster=[clusterName]
+	<br>
+	<i>Single Hystrix App:</i> http://hystrix-app:port/hystrix.stream
+	<br><br>
+	Delay: <input id="delay" type="textfield" size="10" placeholder="2000"></input>ms 
+	&nbsp;&nbsp;&nbsp;&nbsp; 
+	Title: <input id="title" type="textfield" size="60" placeholder="Example Hystrix App"></input><br>
+	<br>
+	<button onclick="sendToMonitor()">Monitor Stream</button>
+	<br><br>
+	<div id="message" style="color:red"></div>
+	
+	</center>
+</div>
+</body>
+</html>. Output mismatching. Hence failing the test."</b><br>org.testng.Assert.fail(Assert.java:89)<br>com.bluemeric.test.GenerateTest.getTest(Unknown Source)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:702)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:768)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1113)<br>org.testng.TestNG.run(TestNG.java:1025)<br>com.bluemeric.test.RunTest.runTests(Unknown Source)<br>com.bluemeric.test.RunTest.main(Unknown Source)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTest(104.199.158.27:7979, lastn, lastn.txt, eureka)">
+                  </a> <!-- getTest(104.199.158.27:7979, lastn, lastn.txt, eureka) -->
+                  <span class="method-name">getTest</span>
+                  <span class="parameters">(104.199.158.27:7979, lastn, lastn.txt, eureka)</span>
+                  <div class="stack-trace"><b>"Expected response code is 200. But got 404. Hence failed the test."</b><br>org.testng.Assert.fail(Assert.java:89)<br>com.bluemeric.test.GenerateTest.getTest(Unknown Source)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:702)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:768)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1113)<br>org.testng.TestNG.run(TestNG.java:1025)<br>com.bluemeric.test.RunTest.runTests(Unknown Source)<br>com.bluemeric.test.RunTest.main(Unknown Source)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Eureka-class-failed -->
+        </div> <!-- panel Eureka -->
+        <div panel-name="test-xml-Eureka1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Eureka1&quot;&gt;
+  &lt;test name=&quot;GET-Eureka1&quot; preserve-order=&quot;true&quot;&gt;
+    &lt;parameter name=&quot;outputFile&quot; value=&quot;eureka1.txt&quot;/&gt;
+    &lt;parameter name=&quot;endpoint&quot; value=&quot;104.199.158.27:7979&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;&quot;/&gt;
+    &lt;parameter name=&quot;suiteName&quot; value=&quot;eureka1&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;get&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.bluemeric.test.GenerateTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GET-Eureka1 --&gt;
+&lt;/suite&gt; &lt;!-- Eureka1 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-Eureka2" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Eureka2&quot;&gt;
+  &lt;test name=&quot;GET-Eureka2-ping&quot; preserve-order=&quot;true&quot;&gt;
+    &lt;parameter name=&quot;outputFile&quot; value=&quot;ping.txt&quot;/&gt;
+    &lt;parameter name=&quot;endpoint&quot; value=&quot;104.199.158.27:7979&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;ping&quot;/&gt;
+    &lt;parameter name=&quot;suiteName&quot; value=&quot;eureka2&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;get&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.bluemeric.test.GenerateTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GET-Eureka2-ping --&gt;
+  &lt;test name=&quot;GET-Eureka2-health&quot; preserve-order=&quot;true&quot;&gt;
+    &lt;parameter name=&quot;outputFile&quot; value=&quot;health.txt&quot;/&gt;
+    &lt;parameter name=&quot;endpoint&quot; value=&quot;104.199.158.27:7979&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;health&quot;/&gt;
+    &lt;parameter name=&quot;suiteName&quot; value=&quot;eureka2&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;get&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.bluemeric.test.GenerateTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GET-Eureka2-health --&gt;
+  &lt;test name=&quot;GET-Eureka2-gateway&quot; preserve-order=&quot;true&quot;&gt;
+    &lt;parameter name=&quot;outputFile&quot; value=&quot;gateway.txt&quot;/&gt;
+    &lt;parameter name=&quot;endpoint&quot; value=&quot;104.199.158.27:7979&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;hosts/gateway&quot;/&gt;
+    &lt;parameter name=&quot;suiteName&quot; value=&quot;eureka2&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;get&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.bluemeric.test.GenerateTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GET-Eureka2-gateway --&gt;
+  &lt;test name=&quot;GET-Eureka2-movie-env&quot; preserve-order=&quot;true&quot;&gt;
+    &lt;parameter name=&quot;outputFile&quot; value=&quot;movieenv.txt&quot;/&gt;
+    &lt;parameter name=&quot;endpoint&quot; value=&quot;104.199.158.27:7979&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;movie/env&quot;/&gt;
+    &lt;parameter name=&quot;suiteName&quot; value=&quot;eureka2&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;get&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.bluemeric.test.GenerateTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GET-Eureka2-movie-env --&gt;
+  &lt;test name=&quot;GET-Eureka2-movie-autoconfig&quot; preserve-order=&quot;true&quot;&gt;
+    &lt;parameter name=&quot;outputFile&quot; value=&quot;autoconfig.txt&quot;/&gt;
+    &lt;parameter name=&quot;endpoint&quot; value=&quot;104.199.158.27:7979&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;movie/autoconfig&quot;/&gt;
+    &lt;parameter name=&quot;suiteName&quot; value=&quot;eureka2&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;get&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.bluemeric.test.GenerateTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GET-Eureka2-movie-autoconfig --&gt;
+&lt;/suite&gt; &lt;!-- Eureka2 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-Eureka" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Eureka&quot;&gt;
+  &lt;test name=&quot;GET-Eureka&quot; preserve-order=&quot;true&quot;&gt;
+    &lt;parameter name=&quot;outputFile&quot; value=&quot;eureka.txt&quot;/&gt;
+    &lt;parameter name=&quot;endpoint&quot; value=&quot;104.199.158.27:7979&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;&quot;/&gt;
+    &lt;parameter name=&quot;suiteName&quot; value=&quot;eureka&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;get&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.bluemeric.test.GenerateTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GET-Eureka --&gt;
+  &lt;test name=&quot;GET-Eureka-startup&quot; preserve-order=&quot;true&quot;&gt;
+    &lt;parameter name=&quot;outputFile&quot; value=&quot;lastn.txt&quot;/&gt;
+    &lt;parameter name=&quot;endpoint&quot; value=&quot;104.199.158.27:7979&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;lastn&quot;/&gt;
+    &lt;parameter name=&quot;suiteName&quot; value=&quot;eureka&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;get&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.bluemeric.test.GenerateTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GET-Eureka-startup --&gt;
+&lt;/suite&gt; &lt;!-- Eureka --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Eureka1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Eureka1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">GET-Eureka1 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Eureka2" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Eureka2</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">GET-Eureka2-ping (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">GET-Eureka2-health (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">GET-Eureka2-gateway (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">GET-Eureka2-movie-env (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">GET-Eureka2-movie-autoconfig (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Eureka" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Eureka</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">GET-Eureka (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">GET-Eureka-startup (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Eureka1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Eureka1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">get</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">getTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Eureka2" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Eureka2</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">get</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">getTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Eureka" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Eureka</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">get</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">getTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Eureka1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Eureka1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Eureka1');
+function tableData_Eureka1() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'getTest')
+data.setCell(0, 2, 'com.bluemeric.test.GenerateTest')
+data.setCell(0, 3, 335);
+window.suiteTableData['Eureka1']= { tableData: data, tableDiv: 'times-div-Eureka1'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 335 ms</span>
+              <div id="times-div-Eureka1">
+              </div> <!-- times-div-Eureka1 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Eureka2" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Eureka2</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Eureka2');
+function tableData_Eureka2() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'getTest')
+data.setCell(0, 2, 'com.bluemeric.test.GenerateTest')
+data.setCell(0, 3, 415);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'getTest')
+data.setCell(1, 2, 'com.bluemeric.test.GenerateTest')
+data.setCell(1, 3, 353);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'getTest')
+data.setCell(2, 2, 'com.bluemeric.test.GenerateTest')
+data.setCell(2, 3, 351);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'getTest')
+data.setCell(3, 2, 'com.bluemeric.test.GenerateTest')
+data.setCell(3, 3, 348);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'getTest')
+data.setCell(4, 2, 'com.bluemeric.test.GenerateTest')
+data.setCell(4, 3, 347);
+window.suiteTableData['Eureka2']= { tableData: data, tableDiv: 'times-div-Eureka2'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <div id="times-div-Eureka2">
+              </div> <!-- times-div-Eureka2 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Eureka" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Eureka</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Eureka');
+function tableData_Eureka() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'getTest')
+data.setCell(0, 2, 'com.bluemeric.test.GenerateTest')
+data.setCell(0, 3, 1373);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'getTest')
+data.setCell(1, 2, 'com.bluemeric.test.GenerateTest')
+data.setCell(1, 3, 491);
+window.suiteTableData['Eureka']= { tableData: data, tableDiv: 'times-div-Eureka'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <div id="times-div-Eureka">
+              </div> <!-- times-div-Eureka -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Eureka1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Eureka1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">getTest(104.199.158.27:7979, , eureka1.txt, eureka1)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">
+
+ Get path : http://104.199.158.27:7979/</span>
+                <span class="reporter-method-output">
+ Response code received : 200</span>
+                <span class="reporter-method-output">
+ Response String received : <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<base href="/hystrix">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Hystrix Dashboard</title>
+
+	<!-- Javascript to monitor and display -->
+	<script src="/webjars/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+	
+	<script>
+		function sendToMonitor() {
+			
+			if($('#stream').val().length > 0) {
+				var url = "/hystrix/monitor?stream=" + encodeURIComponent($('#stream').val()) + "";
+				if($('#delay').val().length > 0) {	
+					url += "&delay=" + $('#delay').val();
+				}
+				if($('#title').val().length > 0) {	
+					url += "&title=" + encodeURIComponent($('#title').val());
+				}
+				location.href= url;
+			} else {
+				$('#message').html("The 'stream' value is required.");
+			}
+		}
+	</script>
+</head>
+<body>
+<div style="width:800px;margin:0 auto;">
+	
+	<center>
+	<img width="264" height="233" src="/hystrix/images/hystrix-logo.png">
+	<br>
+	<br>
+	
+	<h2>Hystrix Dashboard</h2>
+	<input id="stream" type="textfield" size="120" placeholder="http://hostname:port/turbine/turbine.stream"></input>
+	<br><br>
+	<i>Cluster via Turbine (default cluster):</i> http://turbine-hostname:port/turbine.stream
+	<br>
+	<i>Cluster via Turbine (custom cluster):</i> http://turbine-hostname:port/turbine.stream?cluster=[clusterName]
+	<br>
+	<i>Single Hystrix App:</i> http://hystrix-app:port/hystrix.stream
+	<br><br>
+	Delay: <input id="delay" type="textfield" size="10" placeholder="2000"></input>ms 
+	&nbsp;&nbsp;&nbsp;&nbsp; 
+	Title: <input id="title" type="textfield" size="60" placeholder="Example Hystrix App"></input><br>
+	<br>
+	<button onclick="sendToMonitor()">Monitor Stream</button>
+	<br><br>
+	<div id="message" style="color:red"></div>
+	
+	</center>
+</div>
+</body>
+</html></span>
+                <span class="reporter-method-output">
+ Both response code and string are matching with expected output. Hence Passed the test.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Eureka2" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Eureka2</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">getTest(104.199.158.27:7979, ping, ping.txt, eureka2)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">
+
+ Get path : http://104.199.158.27:7979/ping</span>
+                <span class="reporter-method-output">
+ Response code received : 404</span>
+                <span class="reporter-method-output">
+ Response String received : {"timestamp":1477474279454,"status":404,"error":"Not Found","message":"No message available","path":"/ping"}</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">getTest(104.199.158.27:7979, health, health.txt, eureka2)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">
+
+ Get path : http://104.199.158.27:7979/health</span>
+                <span class="reporter-method-output">
+ Response code received : 200</span>
+                <span class="reporter-method-output">
+ Response String received : {"status":"UP","diskSpace":{"status":"UP","total":105654812672,"free":98012565504,"threshold":10485760},"refreshScope":{"status":"UP"},"hystrix":{"status":"UP"}}</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">getTest(104.199.158.27:7979, hosts/gateway, gateway.txt, eureka2)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">
+
+ Get path : http://104.199.158.27:7979/hosts/gateway</span>
+                <span class="reporter-method-output">
+ Response code received : 404</span>
+                <span class="reporter-method-output">
+ Response String received : {"timestamp":1477474280224,"status":404,"error":"Not Found","message":"No message available","path":"/hosts/gateway"}</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">getTest(104.199.158.27:7979, movie/env, movieenv.txt, eureka2)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">
+
+ Get path : http://104.199.158.27:7979/movie/env</span>
+                <span class="reporter-method-output">
+ Response code received : 404</span>
+                <span class="reporter-method-output">
+ Response String received : {"timestamp":1477474280580,"status":404,"error":"Not Found","message":"No message available","path":"/movie/env"}</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">getTest(104.199.158.27:7979, movie/autoconfig, autoconfig.txt, eureka2)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">
+
+ Get path : http://104.199.158.27:7979/movie/autoconfig</span>
+                <span class="reporter-method-output">
+ Response code received : 404</span>
+                <span class="reporter-method-output">
+ Response String received : {"timestamp":1477474280935,"status":404,"error":"Not Found","message":"No message available","path":"/movie/autoconfig"}</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Eureka" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Eureka</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">getTest(104.199.158.27:7979, , eureka.txt, eureka)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">
+
+ Get path : http://104.199.158.27:7979/</span>
+                <span class="reporter-method-output">
+ Response code received : 200</span>
+                <span class="reporter-method-output">
+ Response String received : <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<base href="/hystrix">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Hystrix Dashboard</title>
+
+	<!-- Javascript to monitor and display -->
+	<script src="/webjars/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+	
+	<script>
+		function sendToMonitor() {
+			
+			if($('#stream').val().length > 0) {
+				var url = "/hystrix/monitor?stream=" + encodeURIComponent($('#stream').val()) + "";
+				if($('#delay').val().length > 0) {	
+					url += "&delay=" + $('#delay').val();
+				}
+				if($('#title').val().length > 0) {	
+					url += "&title=" + encodeURIComponent($('#title').val());
+				}
+				location.href= url;
+			} else {
+				$('#message').html("The 'stream' value is required.");
+			}
+		}
+	</script>
+</head>
+<body>
+<div style="width:800px;margin:0 auto;">
+	
+	<center>
+	<img width="264" height="233" src="/hystrix/images/hystrix-logo.png">
+	<br>
+	<br>
+	
+	<h2>Hystrix Dashboard</h2>
+	<input id="stream" type="textfield" size="120" placeholder="http://hostname:port/turbine/turbine.stream"></input>
+	<br><br>
+	<i>Cluster via Turbine (default cluster):</i> http://turbine-hostname:port/turbine.stream
+	<br>
+	<i>Cluster via Turbine (custom cluster):</i> http://turbine-hostname:port/turbine.stream?cluster=[clusterName]
+	<br>
+	<i>Single Hystrix App:</i> http://hystrix-app:port/hystrix.stream
+	<br><br>
+	Delay: <input id="delay" type="textfield" size="10" placeholder="2000"></input>ms 
+	&nbsp;&nbsp;&nbsp;&nbsp; 
+	Title: <input id="title" type="textfield" size="60" placeholder="Example Hystrix App"></input><br>
+	<br>
+	<button onclick="sendToMonitor()">Monitor Stream</button>
+	<br><br>
+	<div id="message" style="color:red"></div>
+	
+	</center>
+</div>
+</body>
+</html></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">getTest(104.199.158.27:7979, lastn, lastn.txt, eureka)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">
+
+ Get path : http://104.199.158.27:7979/lastn</span>
+                <span class="reporter-method-output">
+ Response code received : 404</span>
+                <span class="reporter-method-output">
+ Response String received : {"timestamp":1477474278962,"status":404,"error":"Not Found","message":"No message available","path":"/lastn"}</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Eureka1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Eureka2" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Eureka" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Eureka1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.bluemeric.test.GenerateTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTest(104.199.158.27:7979, , eureka.txt, eureka)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTest(104.199.158.27:7979, lastn, lastn.txt, eureka)</span>
+                <span class="method-start">1395 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTest(104.199.158.27:7979, ping, ping.txt, eureka2)</span>
+                <span class="method-start">1889 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTest(104.199.158.27:7979, health, health.txt, eureka2)</span>
+                <span class="method-start">2240 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTest(104.199.158.27:7979, hosts/gateway, gateway.txt, eureka2)</span>
+                <span class="method-start">2660 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTest(104.199.158.27:7979, movie/env, movieenv.txt, eureka2)</span>
+                <span class="method-start">3017 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTest(104.199.158.27:7979, movie/autoconfig, autoconfig.txt, eureka2)</span>
+                <span class="method-start">3367 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getTest(104.199.158.27:7979, , eureka1.txt, eureka1)</span>
+                <span class="method-start">3724 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Eureka2" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.bluemeric.test.GenerateTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTest(104.199.158.27:7979, , eureka.txt, eureka)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTest(104.199.158.27:7979, lastn, lastn.txt, eureka)</span>
+                <span class="method-start">1395 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTest(104.199.158.27:7979, ping, ping.txt, eureka2)</span>
+                <span class="method-start">1889 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTest(104.199.158.27:7979, health, health.txt, eureka2)</span>
+                <span class="method-start">2240 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTest(104.199.158.27:7979, hosts/gateway, gateway.txt, eureka2)</span>
+                <span class="method-start">2660 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTest(104.199.158.27:7979, movie/env, movieenv.txt, eureka2)</span>
+                <span class="method-start">3017 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTest(104.199.158.27:7979, movie/autoconfig, autoconfig.txt, eureka2)</span>
+                <span class="method-start">3367 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getTest(104.199.158.27:7979, , eureka1.txt, eureka1)</span>
+                <span class="method-start">3724 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Eureka" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.bluemeric.test.GenerateTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTest(104.199.158.27:7979, , eureka.txt, eureka)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTest(104.199.158.27:7979, lastn, lastn.txt, eureka)</span>
+                <span class="method-start">1395 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTest(104.199.158.27:7979, ping, ping.txt, eureka2)</span>
+                <span class="method-start">1889 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTest(104.199.158.27:7979, health, health.txt, eureka2)</span>
+                <span class="method-start">2240 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTest(104.199.158.27:7979, hosts/gateway, gateway.txt, eureka2)</span>
+                <span class="method-start">2660 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTest(104.199.158.27:7979, movie/env, movieenv.txt, eureka2)</span>
+                <span class="method-start">3017 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTest(104.199.158.27:7979, movie/autoconfig, autoconfig.txt, eureka2)</span>
+                <span class="method-start">3367 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getTest(104.199.158.27:7979, , eureka1.txt, eureka1)</span>
+                <span class="method-start">3724 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

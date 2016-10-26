@@ -1,0 +1,441 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><th colspan="7">Eureka1</th></tr>
+<tr><td style="text-align:left;padding-right:2em">GET-Eureka1</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.3 seconds</td><td class="numi">get </td><td class="numi"></td></tr>
+<tr><th colspan="7">Eureka2</th></tr>
+<tr><td style="text-align:left;padding-right:2em">GET-Eureka2-ping</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0.3 seconds</td><td class="numi">get </td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">GET-Eureka2-health</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0.4 seconds</td><td class="numi">get </td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">GET-Eureka2-gateway</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0.4 seconds</td><td class="numi">get </td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">GET-Eureka2-movie-env</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0.3 seconds</td><td class="numi">get </td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">GET-Eureka2-movie-autoconfig</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0.4 seconds</td><td class="numi">get </td><td class="numi"></td></tr>
+<tr><th colspan="7">Eureka</th></tr>
+<tr><td style="text-align:left;padding-right:2em">GET-Eureka</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">1.4 seconds</td><td class="numi">get </td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">GET-Eureka-startup</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0.5 seconds</td><td class="numi">get </td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">7</td><td class="numi">4.1 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Eureka1</th></tr>
+<tr><th colspan="4">GET-Eureka1 &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.bluemeric.test.GenerateTest<td><a href="#m1"><b>getTest</b> (get) </a></td><td class="numi">1</td><td>1477474281023</td><td class="numi">335</td></tr>
+<tr><th colspan="4">Eureka2</th></tr>
+<tr><th colspan="4">GET-Eureka2-ping &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.bluemeric.test.GenerateTest<td><a href="#m2"><b>getTest</b> (get) </a></td><td class="numi">1</td><td>1477474279188</td><td class="numi">348</td></tr>
+<tr><th colspan="4">GET-Eureka2-health &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.bluemeric.test.GenerateTest<td><a href="#m3"><b>getTest</b> (get) </a></td><td class="numi">1</td><td>1477474279539</td><td class="numi">415</td></tr>
+<tr><th colspan="4">GET-Eureka2-gateway &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.bluemeric.test.GenerateTest<td><a href="#m4"><b>getTest</b> (get) </a></td><td class="numi">1</td><td>1477474279959</td><td class="numi">353</td></tr>
+<tr><th colspan="4">GET-Eureka2-movie-env &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.bluemeric.test.GenerateTest<td><a href="#m5"><b>getTest</b> (get) </a></td><td class="numi">1</td><td>1477474280316</td><td class="numi">347</td></tr>
+<tr><th colspan="4">GET-Eureka2-movie-autoconfig &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.bluemeric.test.GenerateTest<td><a href="#m6"><b>getTest</b> (get) </a></td><td class="numi">1</td><td>1477474280666</td><td class="numi">351</td></tr>
+<tr><th colspan="4">Eureka</th></tr>
+<tr><th colspan="4">GET-Eureka &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.bluemeric.test.GenerateTest<td><a href="#m7"><b>getTest</b> (get) </a></td><td class="numi">1</td><td>1477474277299</td><td class="numi">1373</td></tr>
+<tr><th colspan="4">GET-Eureka-startup &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.bluemeric.test.GenerateTest<td><a href="#m8"><b>getTest</b> (get) </a></td><td class="numi">1</td><td>1477474278694</td><td class="numi">491</td></tr>
+</table>
+<h1>GET-Eureka1</h1>
+<a id="m1"></a><h2>com.bluemeric.test.GenerateTest:getTest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th><th style="padding-left:1em;padding-right:1em">Parameter #4</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">104.199.158.27:7979</td>
+<td style="padding-left:.5em;padding-right:2em"></td>
+<td style="padding-left:.5em;padding-right:2em">eureka1.txt</td>
+<td style="padding-left:.5em;padding-right:2em">eureka1</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="4">
+
+
+ Get path : http://104.199.158.27:7979/<br/>
+
+ Response code received : 200<br/>
+
+ Response String received : <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<base href="/hystrix">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Hystrix Dashboard</title>
+
+	<!-- Javascript to monitor and display -->
+	<script src="/webjars/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+	
+	<script>
+		function sendToMonitor() {
+			
+			if($('#stream').val().length > 0) {
+				var url = "/hystrix/monitor?stream=" + encodeURIComponent($('#stream').val()) + "";
+				if($('#delay').val().length > 0) {	
+					url += "&delay=" + $('#delay').val();
+				}
+				if($('#title').val().length > 0) {	
+					url += "&title=" + encodeURIComponent($('#title').val());
+				}
+				location.href= url;
+			} else {
+				$('#message').html("The 'stream' value is required.");
+			}
+		}
+	</script>
+</head>
+<body>
+<div style="width:800px;margin:0 auto;">
+	
+	<center>
+	<img width="264" height="233" src="/hystrix/images/hystrix-logo.png">
+	<br>
+	<br>
+	
+	<h2>Hystrix Dashboard</h2>
+	<input id="stream" type="textfield" size="120" placeholder="http://hostname:port/turbine/turbine.stream"></input>
+	<br><br>
+	<i>Cluster via Turbine (default cluster):</i> http://turbine-hostname:port/turbine.stream
+	<br>
+	<i>Cluster via Turbine (custom cluster):</i> http://turbine-hostname:port/turbine.stream?cluster=[clusterName]
+	<br>
+	<i>Single Hystrix App:</i> http://hystrix-app:port/hystrix.stream
+	<br><br>
+	Delay: <input id="delay" type="textfield" size="10" placeholder="2000"></input>ms 
+	&nbsp;&nbsp;&nbsp;&nbsp; 
+	Title: <input id="title" type="textfield" size="60" placeholder="Example Hystrix App"></input><br>
+	<br>
+	<button onclick="sendToMonitor()">Monitor Stream</button>
+	<br><br>
+	<div id="message" style="color:red"></div>
+	
+	</center>
+</div>
+</body>
+</html><br/>
+
+ Both response code and string are matching with expected output. Hence Passed the test.<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>GET-Eureka2-ping</h1>
+<a id="m2"></a><h2>com.bluemeric.test.GenerateTest:getTest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th><th style="padding-left:1em;padding-right:1em">Parameter #4</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">104.199.158.27:7979</td>
+<td style="padding-left:.5em;padding-right:2em">ping</td>
+<td style="padding-left:.5em;padding-right:2em">ping.txt</td>
+<td style="padding-left:.5em;padding-right:2em">eureka2</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="4">
+<h3>Test Messages</h3>
+
+
+ Get path : http://104.199.158.27:7979/ping<br/>
+
+ Response code received : 404<br/>
+
+ Response String received : {"timestamp":1477474279454,"status":404,"error":"Not Found","message":"No message available","path":"/ping"}<br/>
+<h3>Failure</h3>
+<p>Expected response code is 200. But got 404. Hence failed the test.</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at com.bluemeric.test.GenerateTest.getTest(Unknown Source)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>GET-Eureka2-health</h1>
+<a id="m3"></a><h2>com.bluemeric.test.GenerateTest:getTest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th><th style="padding-left:1em;padding-right:1em">Parameter #4</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">104.199.158.27:7979</td>
+<td style="padding-left:.5em;padding-right:2em">health</td>
+<td style="padding-left:.5em;padding-right:2em">health.txt</td>
+<td style="padding-left:.5em;padding-right:2em">eureka2</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="4">
+<h3>Test Messages</h3>
+
+
+ Get path : http://104.199.158.27:7979/health<br/>
+
+ Response code received : 200<br/>
+
+ Response String received : {"status":"UP","diskSpace":{"status":"UP","total":105654812672,"free":98012565504,"threshold":10485760},"refreshScope":{"status":"UP"},"hystrix":{"status":"UP"}}<br/>
+<h3>Failure</h3>
+<p>Expected response is localApplication. But received reponse = {&quot;status&quot;:&quot;UP&quot;,&quot;diskSpace&quot;:{&quot;status&quot;:&quot;UP&quot;,&quot;total&quot;:105654812672,&quot;free&quot;:98012565504,&quot;threshold&quot;:10485760},&quot;refreshScope&quot;:{&quot;status&quot;:&quot;UP&quot;},&quot;hystrix&quot;:{&quot;status&quot;:&quot;UP&quot;}}. Output mismatching. Hence failing the test.</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at com.bluemeric.test.GenerateTest.getTest(Unknown Source)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>GET-Eureka2-gateway</h1>
+<a id="m4"></a><h2>com.bluemeric.test.GenerateTest:getTest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th><th style="padding-left:1em;padding-right:1em">Parameter #4</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">104.199.158.27:7979</td>
+<td style="padding-left:.5em;padding-right:2em">hosts/gateway</td>
+<td style="padding-left:.5em;padding-right:2em">gateway.txt</td>
+<td style="padding-left:.5em;padding-right:2em">eureka2</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="4">
+<h3>Test Messages</h3>
+
+
+ Get path : http://104.199.158.27:7979/hosts/gateway<br/>
+
+ Response code received : 404<br/>
+
+ Response String received : {"timestamp":1477474280224,"status":404,"error":"Not Found","message":"No message available","path":"/hosts/gateway"}<br/>
+<h3>Failure</h3>
+<p>Expected response code is 200. But got 404. Hence failed the test.</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at com.bluemeric.test.GenerateTest.getTest(Unknown Source)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>GET-Eureka2-movie-env</h1>
+<a id="m5"></a><h2>com.bluemeric.test.GenerateTest:getTest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th><th style="padding-left:1em;padding-right:1em">Parameter #4</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">104.199.158.27:7979</td>
+<td style="padding-left:.5em;padding-right:2em">movie/env</td>
+<td style="padding-left:.5em;padding-right:2em">movieenv.txt</td>
+<td style="padding-left:.5em;padding-right:2em">eureka2</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="4">
+<h3>Test Messages</h3>
+
+
+ Get path : http://104.199.158.27:7979/movie/env<br/>
+
+ Response code received : 404<br/>
+
+ Response String received : {"timestamp":1477474280580,"status":404,"error":"Not Found","message":"No message available","path":"/movie/env"}<br/>
+<h3>Failure</h3>
+<p>Expected response code is 200. But got 404. Hence failed the test.</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at com.bluemeric.test.GenerateTest.getTest(Unknown Source)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>GET-Eureka2-movie-autoconfig</h1>
+<a id="m6"></a><h2>com.bluemeric.test.GenerateTest:getTest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th><th style="padding-left:1em;padding-right:1em">Parameter #4</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">104.199.158.27:7979</td>
+<td style="padding-left:.5em;padding-right:2em">movie/autoconfig</td>
+<td style="padding-left:.5em;padding-right:2em">autoconfig.txt</td>
+<td style="padding-left:.5em;padding-right:2em">eureka2</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="4">
+<h3>Test Messages</h3>
+
+
+ Get path : http://104.199.158.27:7979/movie/autoconfig<br/>
+
+ Response code received : 404<br/>
+
+ Response String received : {"timestamp":1477474280935,"status":404,"error":"Not Found","message":"No message available","path":"/movie/autoconfig"}<br/>
+<h3>Failure</h3>
+<p>Expected response code is 200. But got 404. Hence failed the test.</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at com.bluemeric.test.GenerateTest.getTest(Unknown Source)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>GET-Eureka</h1>
+<a id="m7"></a><h2>com.bluemeric.test.GenerateTest:getTest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th><th style="padding-left:1em;padding-right:1em">Parameter #4</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">104.199.158.27:7979</td>
+<td style="padding-left:.5em;padding-right:2em"></td>
+<td style="padding-left:.5em;padding-right:2em">eureka.txt</td>
+<td style="padding-left:.5em;padding-right:2em">eureka</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="4">
+<h3>Test Messages</h3>
+
+
+ Get path : http://104.199.158.27:7979/<br/>
+
+ Response code received : 200<br/>
+
+ Response String received : <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<base href="/hystrix">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Hystrix Dashboard</title>
+
+	<!-- Javascript to monitor and display -->
+	<script src="/webjars/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+	
+	<script>
+		function sendToMonitor() {
+			
+			if($('#stream').val().length > 0) {
+				var url = "/hystrix/monitor?stream=" + encodeURIComponent($('#stream').val()) + "";
+				if($('#delay').val().length > 0) {	
+					url += "&delay=" + $('#delay').val();
+				}
+				if($('#title').val().length > 0) {	
+					url += "&title=" + encodeURIComponent($('#title').val());
+				}
+				location.href= url;
+			} else {
+				$('#message').html("The 'stream' value is required.");
+			}
+		}
+	</script>
+</head>
+<body>
+<div style="width:800px;margin:0 auto;">
+	
+	<center>
+	<img width="264" height="233" src="/hystrix/images/hystrix-logo.png">
+	<br>
+	<br>
+	
+	<h2>Hystrix Dashboard</h2>
+	<input id="stream" type="textfield" size="120" placeholder="http://hostname:port/turbine/turbine.stream"></input>
+	<br><br>
+	<i>Cluster via Turbine (default cluster):</i> http://turbine-hostname:port/turbine.stream
+	<br>
+	<i>Cluster via Turbine (custom cluster):</i> http://turbine-hostname:port/turbine.stream?cluster=[clusterName]
+	<br>
+	<i>Single Hystrix App:</i> http://hystrix-app:port/hystrix.stream
+	<br><br>
+	Delay: <input id="delay" type="textfield" size="10" placeholder="2000"></input>ms 
+	&nbsp;&nbsp;&nbsp;&nbsp; 
+	Title: <input id="title" type="textfield" size="60" placeholder="Example Hystrix App"></input><br>
+	<br>
+	<button onclick="sendToMonitor()">Monitor Stream</button>
+	<br><br>
+	<div id="message" style="color:red"></div>
+	
+	</center>
+</div>
+</body>
+</html><br/>
+<h3>Failure</h3>
+<p>Expected response is Instances currently registered with Eureka. But received reponse = &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;base href=&quot;/hystrix&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=ISO-8859-1&quot;&gt;
+&lt;title&gt;Hystrix Dashboard&lt;/title&gt;
+
+	&lt;!-- Javascript to monitor and display --&gt;
+	&lt;script src=&quot;/webjars/jquery/2.1.1/jquery.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+	
+	&lt;script&gt;
+		function sendToMonitor() {
+			
+			if($(&apos;#stream&apos;).val().length &gt; 0) {
+				var url = &quot;/hystrix/monitor?stream=&quot; + encodeURIComponent($(&apos;#stream&apos;).val()) + &quot;&quot;;
+				if($(&apos;#delay&apos;).val().length &gt; 0) {	
+					url += &quot;&delay=&quot; + $(&apos;#delay&apos;).val();
+				}
+				if($(&apos;#title&apos;).val().length &gt; 0) {	
+					url += &quot;&title=&quot; + encodeURIComponent($(&apos;#title&apos;).val());
+				}
+				location.href= url;
+			} else {
+				$(&apos;#message&apos;).html(&quot;The &apos;stream&apos; value is required.&quot;);
+			}
+		}
+	&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div style=&quot;width:800px;margin:0 auto;&quot;&gt;
+	
+	&lt;center&gt;
+	&lt;img width=&quot;264&quot; height=&quot;233&quot; src=&quot;/hystrix/images/hystrix-logo.png&quot;&gt;
+	&lt;br&gt;
+	&lt;br&gt;
+	
+	&lt;h2&gt;Hystrix Dashboard&lt;/h2&gt;
+	&lt;input id=&quot;stream&quot; type=&quot;textfield&quot; size=&quot;120&quot; placeholder=&quot;http://hostname:port/turbine/turbine.stream&quot;&gt;&lt;/input&gt;
+	&lt;br&gt;&lt;br&gt;
+	&lt;i&gt;Cluster via Turbine (default cluster):&lt;/i&gt; http://turbine-hostname:port/turbine.stream
+	&lt;br&gt;
+	&lt;i&gt;Cluster via Turbine (custom cluster):&lt;/i&gt; http://turbine-hostname:port/turbine.stream?cluster=[clusterName]
+	&lt;br&gt;
+	&lt;i&gt;Single Hystrix App:&lt;/i&gt; http://hystrix-app:port/hystrix.stream
+	&lt;br&gt;&lt;br&gt;
+	Delay: &lt;input id=&quot;delay&quot; type=&quot;textfield&quot; size=&quot;10&quot; placeholder=&quot;2000&quot;&gt;&lt;/input&gt;ms 
+	&nbsp;&nbsp;&nbsp;&nbsp; 
+	Title: &lt;input id=&quot;title&quot; type=&quot;textfield&quot; size=&quot;60&quot; placeholder=&quot;Example Hystrix App&quot;&gt;&lt;/input&gt;&lt;br&gt;
+	&lt;br&gt;
+	&lt;button onclick=&quot;sendToMonitor()&quot;&gt;Monitor Stream&lt;/button&gt;
+	&lt;br&gt;&lt;br&gt;
+	&lt;div id=&quot;message&quot; style=&quot;color:red&quot;&gt;&lt;/div&gt;
+	
+	&lt;/center&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;. Output mismatching. Hence failing the test.</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at com.bluemeric.test.GenerateTest.getTest(Unknown Source)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>GET-Eureka-startup</h1>
+<a id="m8"></a><h2>com.bluemeric.test.GenerateTest:getTest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th><th style="padding-left:1em;padding-right:1em">Parameter #4</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">104.199.158.27:7979</td>
+<td style="padding-left:.5em;padding-right:2em">lastn</td>
+<td style="padding-left:.5em;padding-right:2em">lastn.txt</td>
+<td style="padding-left:.5em;padding-right:2em">eureka</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="4">
+<h3>Test Messages</h3>
+
+
+ Get path : http://104.199.158.27:7979/lastn<br/>
+
+ Response code received : 404<br/>
+
+ Response String received : {"timestamp":1477474278962,"status":404,"error":"Not Found","message":"No message available","path":"/lastn"}<br/>
+<h3>Failure</h3>
+<p>Expected response code is 200. But got 404. Hence failed the test.</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at com.bluemeric.test.GenerateTest.getTest(Unknown Source)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

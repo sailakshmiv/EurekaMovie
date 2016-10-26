@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Eureka]">
+  <parameter name="outputFile" value="lastn.txt"/>
+  <parameter name="endpoint" value="104.199.158.27:7979"/>
+  <parameter name="url" value="lastn"/>
+  <parameter name="suiteName" value="eureka"/>
+  <test name="GET-Eureka(failed)" preserve-order="true">
+    <parameter name="outputFile" value="eureka.txt"/>
+    <parameter name="endpoint" value="104.199.158.27:7979"/>
+    <parameter name="url" value=""/>
+    <parameter name="suiteName" value="eureka"/>
+    <groups>
+      <run>
+        <include name="get"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.bluemeric.test.GenerateTest">
+        <methods>
+          <include name="getTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </classes>
+  </test> <!-- GET-Eureka(failed) -->
+  <test name="GET-Eureka-startup(failed)" preserve-order="true">
+    <parameter name="outputFile" value="lastn.txt"/>
+    <parameter name="endpoint" value="104.199.158.27:7979"/>
+    <parameter name="url" value="lastn"/>
+    <parameter name="suiteName" value="eureka"/>
+    <groups>
+      <run>
+        <include name="get"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.bluemeric.test.GenerateTest">
+        <methods>
+          <include name="getTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </classes>
+  </test> <!-- GET-Eureka-startup(failed) -->
+</suite> <!-- Failed suite [Eureka] -->

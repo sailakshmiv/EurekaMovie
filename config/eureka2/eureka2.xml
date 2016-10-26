@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestApp name="Eureka2">
+	<queryParam name="GET-Eureka2-ping" url="ping" outputFile="ping.txt" />
+	<queryParam name="GET-Eureka2-health" url="health" outputFile="health.txt" />
+	<queryParam name="GET-Eureka2-gateway" url="hosts/gateway" outputFile="gateway.txt" />
+	<queryParam name="GET-Eureka2-movie-env" url="movie/env" outputFile="movieenv.txt" />
+	<queryParam name="GET-Eureka2-movie-autoconfig" url="movie/autoconfig" outputFile="autoconfig.txt" />
+</TestApp>

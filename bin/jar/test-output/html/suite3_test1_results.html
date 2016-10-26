@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - GET-Eureka</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>GET-Eureka</h1>
+<p>
+  Test duration: 1.373s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.bluemeric.test.GenerateTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  getTest
+      </td>
+  <td class="duration">
+    1.373s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"104.199.158.27:7979", "", "eureka.txt", "eureka"</span><br />
+    
+            <div class="testOutput">
+                        <br/>
+<br/>
+ Get path : http://104.199.158.27:7979/<br />
+                                <br/>
+ Response code received : 200<br />
+                                <br/>
+ Response String received : &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;<br/>
+&lt;html&gt;<br/>
+&lt;head&gt;<br/>
+&lt;base href=&quot;/hystrix&quot;&gt;<br/>
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=ISO-8859-1&quot;&gt;<br/>
+&lt;title&gt;Hystrix Dashboard&lt;/title&gt;<br/>
+<br/>
+	&lt;!-- Javascript to monitor and display --&gt;<br/>
+	&lt;script src=&quot;/webjars/jquery/2.1.1/jquery.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;<br/>
+	<br/>
+	&lt;script&gt;<br/>
+		function sendToMonitor() {<br/>
+			<br/>
+			if($(&apos;#stream&apos;).val().length &gt; 0) {<br/>
+				var url = &quot;/hystrix/monitor?stream=&quot; + encodeURIComponent($(&apos;#stream&apos;).val()) + &quot;&quot;;<br/>
+				if($(&apos;#delay&apos;).val().length &gt; 0) {	<br/>
+					url += &quot;&amp;delay=&quot; + $(&apos;#delay&apos;).val();<br/>
+				}<br/>
+				if($(&apos;#title&apos;).val().length &gt; 0) {	<br/>
+					url += &quot;&amp;title=&quot; + encodeURIComponent($(&apos;#title&apos;).val());<br/>
+				}<br/>
+				location.href= url;<br/>
+			} else {<br/>
+				$(&apos;#message&apos;).html(&quot;The &apos;stream&apos; value is required.&quot;);<br/>
+			}<br/>
+		}<br/>
+	&lt;/script&gt;<br/>
+&lt;/head&gt;<br/>
+&lt;body&gt;<br/>
+&lt;div style=&quot;width:800px;margin:0 auto;&quot;&gt;<br/>
+	<br/>
+	&lt;center&gt;<br/>
+	&lt;img width=&quot;264&quot; height=&quot;233&quot; src=&quot;/hystrix/images/hystrix-logo.png&quot;&gt;<br/>
+	&lt;br&gt;<br/>
+	&lt;br&gt;<br/>
+	<br/>
+	&lt;h2&gt;Hystrix Dashboard&lt;/h2&gt;<br/>
+	&lt;input id=&quot;stream&quot; type=&quot;textfield&quot; size=&quot;120&quot; placeholder=&quot;http://hostname:port/turbine/turbine.stream&quot;&gt;&lt;/input&gt;<br/>
+	&lt;br&gt;&lt;br&gt;<br/>
+	&lt;i&gt;Cluster via Turbine (default cluster):&lt;/i&gt; http://turbine-hostname:port/turbine.stream<br/>
+	&lt;br&gt;<br/>
+	&lt;i&gt;Cluster via Turbine (custom cluster):&lt;/i&gt; http://turbine-hostname:port/turbine.stream?cluster=[clusterName]<br/>
+	&lt;br&gt;<br/>
+	&lt;i&gt;Single Hystrix App:&lt;/i&gt; http://hystrix-app:port/hystrix.stream<br/>
+	&lt;br&gt;&lt;br&gt;<br/>
+	Delay: &lt;input id=&quot;delay&quot; type=&quot;textfield&quot; size=&quot;10&quot; placeholder=&quot;2000&quot;&gt;&lt;/input&gt;ms <br/>
+	&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; <br/>
+	Title: &lt;input id=&quot;title&quot; type=&quot;textfield&quot; size=&quot;60&quot; placeholder=&quot;Example Hystrix App&quot;&gt;&lt;/input&gt;&lt;br&gt;<br/>
+	&lt;br&gt;<br/>
+	&lt;button onclick=&quot;sendToMonitor()&quot;&gt;Monitor Stream&lt;/button&gt;<br/>
+	&lt;br&gt;&lt;br&gt;<br/>
+	&lt;div id=&quot;message&quot; style=&quot;color:red&quot;&gt;&lt;/div&gt;<br/>
+	<br/>
+	&lt;/center&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/body&gt;<br/>
+&lt;/html&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Expected response is Instances currently registered with Eureka. But received reponse = &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;<br/>
+&lt;html&gt;<br/>
+&lt;head&gt;<br/>
+&lt;base href=&quot;/hystrix&quot;&gt;<br/>
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=ISO-8859-1&quot;&gt;<br/>
+&lt;title&gt;Hystrix Dashboard&lt;/title&gt;<br/>
+<br/>
+	&lt;!-- Javascript to monitor and display --&gt;<br/>
+	&lt;script src=&quot;/webjars/jquery/2.1.1/jquery.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;<br/>
+	<br/>
+	&lt;script&gt;<br/>
+		function sendToMonitor() {<br/>
+			<br/>
+			if($(&apos;#stream&apos;).val().length &gt; 0) {<br/>
+				var url = &quot;/hystrix/monitor?stream=&quot; + encodeURIComponent($(&apos;#stream&apos;).val()) + &quot;&quot;;<br/>
+				if($(&apos;#delay&apos;).val().length &gt; 0) {	<br/>
+					url += &quot;&amp;delay=&quot; + $(&apos;#delay&apos;).val();<br/>
+				}<br/>
+				if($(&apos;#title&apos;).val().length &gt; 0) {	<br/>
+					url += &quot;&amp;title=&quot; + encodeURIComponent($(&apos;#title&apos;).val());<br/>
+				}<br/>
+				location.href= url;<br/>
+			} else {<br/>
+				$(&apos;#message&apos;).html(&quot;The &apos;stream&apos; value is required.&quot;);<br/>
+			}<br/>
+		}<br/>
+	&lt;/script&gt;<br/>
+&lt;/head&gt;<br/>
+&lt;body&gt;<br/>
+&lt;div style=&quot;width:800px;margin:0 auto;&quot;&gt;<br/>
+	<br/>
+	&lt;center&gt;<br/>
+	&lt;img width=&quot;264&quot; height=&quot;233&quot; src=&quot;/hystrix/images/hystrix-logo.png&quot;&gt;<br/>
+	&lt;br&gt;<br/>
+	&lt;br&gt;<br/>
+	<br/>
+	&lt;h2&gt;Hystrix Dashboard&lt;/h2&gt;<br/>
+	&lt;input id=&quot;stream&quot; type=&quot;textfield&quot; size=&quot;120&quot; placeholder=&quot;http://hostname:port/turbine/turbine.stream&quot;&gt;&lt;/input&gt;<br/>
+	&lt;br&gt;&lt;br&gt;<br/>
+	&lt;i&gt;Cluster via Turbine (default cluster):&lt;/i&gt; http://turbine-hostname:port/turbine.stream<br/>
+	&lt;br&gt;<br/>
+	&lt;i&gt;Cluster via Turbine (custom cluster):&lt;/i&gt; http://turbine-hostname:port/turbine.stream?cluster=[clusterName]<br/>
+	&lt;br&gt;<br/>
+	&lt;i&gt;Single Hystrix App:&lt;/i&gt; http://hystrix-app:port/hystrix.stream<br/>
+	&lt;br&gt;&lt;br&gt;<br/>
+	Delay: &lt;input id=&quot;delay&quot; type=&quot;textfield&quot; size=&quot;10&quot; placeholder=&quot;2000&quot;&gt;&lt;/input&gt;ms <br/>
+	&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; <br/>
+	Title: &lt;input id=&quot;title&quot; type=&quot;textfield&quot; size=&quot;60&quot; placeholder=&quot;Example Hystrix App&quot;&gt;&lt;/input&gt;&lt;br&gt;<br/>
+	&lt;br&gt;<br/>
+	&lt;button onclick=&quot;sendToMonitor()&quot;&gt;Monitor Stream&lt;/button&gt;<br/>
+	&lt;br&gt;&lt;br&gt;<br/>
+	&lt;div id=&quot;message&quot; style=&quot;color:red&quot;&gt;&lt;/div&gt;<br/>
+	<br/>
+	&lt;/center&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/body&gt;<br/>
+&lt;/html&gt;. Output mismatching. Hence failing the test.</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.testng.Assert.fail(Assert.java:89)<br />
+              com.bluemeric.test.GenerateTest.getTest(Unknown Source)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:702)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:768)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1113)<br />
+              org.testng.TestNG.run(TestNG.java:1025)<br />
+              com.bluemeric.test.RunTest.runTests(Unknown Source)<br />
+              com.bluemeric.test.RunTest.main(Unknown Source)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  
+</body>
+</html>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Eureka2]">
+  <parameter name="outputFile" value="autoconfig.txt"/>
+  <parameter name="endpoint" value="104.199.158.27:7979"/>
+  <parameter name="url" value="movie/autoconfig"/>
+  <parameter name="suiteName" value="eureka2"/>
+  <test name="GET-Eureka2-ping(failed)" preserve-order="true">
+    <parameter name="outputFile" value="ping.txt"/>
+    <parameter name="endpoint" value="104.199.158.27:7979"/>
+    <parameter name="url" value="ping"/>
+    <parameter name="suiteName" value="eureka2"/>
+    <groups>
+      <run>
+        <include name="get"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.bluemeric.test.GenerateTest">
+        <methods>
+          <include name="getTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </classes>
+  </test> <!-- GET-Eureka2-ping(failed) -->
+  <test name="GET-Eureka2-health(failed)" preserve-order="true">
+    <parameter name="outputFile" value="health.txt"/>
+    <parameter name="endpoint" value="104.199.158.27:7979"/>
+    <parameter name="url" value="health"/>
+    <parameter name="suiteName" value="eureka2"/>
+    <groups>
+      <run>
+        <include name="get"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.bluemeric.test.GenerateTest">
+        <methods>
+          <include name="getTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </classes>
+  </test> <!-- GET-Eureka2-health(failed) -->
+  <test name="GET-Eureka2-gateway(failed)" preserve-order="true">
+    <parameter name="outputFile" value="gateway.txt"/>
+    <parameter name="endpoint" value="104.199.158.27:7979"/>
+    <parameter name="url" value="hosts/gateway"/>
+    <parameter name="suiteName" value="eureka2"/>
+    <groups>
+      <run>
+        <include name="get"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.bluemeric.test.GenerateTest">
+        <methods>
+          <include name="getTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </classes>
+  </test> <!-- GET-Eureka2-gateway(failed) -->
+  <test name="GET-Eureka2-movie-env(failed)" preserve-order="true">
+    <parameter name="outputFile" value="movieenv.txt"/>
+    <parameter name="endpoint" value="104.199.158.27:7979"/>
+    <parameter name="url" value="movie/env"/>
+    <parameter name="suiteName" value="eureka2"/>
+    <groups>
+      <run>
+        <include name="get"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.bluemeric.test.GenerateTest">
+        <methods>
+          <include name="getTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </classes>
+  </test> <!-- GET-Eureka2-movie-env(failed) -->
+  <test name="GET-Eureka2-movie-autoconfig(failed)" preserve-order="true">
+    <parameter name="outputFile" value="autoconfig.txt"/>
+    <parameter name="endpoint" value="104.199.158.27:7979"/>
+    <parameter name="url" value="movie/autoconfig"/>
+    <parameter name="suiteName" value="eureka2"/>
+    <groups>
+      <run>
+        <include name="get"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.bluemeric.test.GenerateTest">
+        <methods>
+          <include name="getTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </classes>
+  </test> <!-- GET-Eureka2-movie-autoconfig(failed) -->
+</suite> <!-- Failed suite [Eureka2] -->
